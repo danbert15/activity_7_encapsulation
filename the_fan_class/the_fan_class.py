@@ -45,3 +45,17 @@ class Fan:
                 f"Radius: {self.__radius}, "
                 f"Color: {self.__color}, "
                 f"On: {self.__on}")
+
+def main():
+    fan1 = Fan(speed=Fan.FAST, radius=10, color="yellow", on=True)
+
+    fan2 = Fan(speed=Fan.MEDIUM, radius=5, color="blue", on=False)
+
+    print("Fan 1 Properties:")
+    print(fan1)
+
+    print("\nFan 2 Properties:")
+    print(fan2)
+
+if __name__ == "__main__":
+    main()
