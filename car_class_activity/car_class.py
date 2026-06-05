@@ -15,3 +15,23 @@ class Car:
     def get_speed(self):
         return self.__speed
 
+def main():
+    my_car = Car("2024", "Ford")
+
+    print(f"Testing the Car Class...")
+    print("-" * 30)
+
+    print("Accelerating:")
+    for i in range(5):
+        my_car.accelerate()
+        print(f"Call {i + 1}: Current speed is {my_car.get_speed()}")
+
+    print("-" * 30)
+
+    print("Braking:")
+    for i in range(5):
+        my_car.brake()
+        print(f"Call {i + 1}: Current speed is {my_car.get_speed()}")
+
+if __name__ == "__main__":
+    main()
